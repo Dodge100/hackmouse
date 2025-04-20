@@ -11,17 +11,11 @@ export function Header() {
           <span className="text-xl font-bold text-white">HackMouse</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6">
-          <Link href="#" className="text-sm text-gray-400 hover:text-cyan-400 transition-colors">
+          <Link href="/" className="text-sm text-gray-400 hover:text-cyan-400 transition-colors">
             Home
-          </Link>
-          <Link href="#steps" className="text-sm text-gray-400 hover:text-cyan-400 transition-colors">
-            How It Works
           </Link>
           <Link href="/guide" className="text-sm text-gray-400 hover:text-cyan-400 transition-colors">
             Guide
-          </Link>
-          <Link href="#" className="text-sm text-gray-400 hover:text-cyan-400 transition-colors">
-            About
           </Link>
         </nav>
       </div>

@@ -6,6 +6,7 @@ import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Book, FileText, Code, ArrowLeft } from "lucide-react"
 import ReactMarkdown from "react-markdown"
 import Link from "next/link"
+import { Header } from "@/components/header"
 
 const mockGuides = {
   "getting-started": `
@@ -47,14 +48,13 @@ Learn how to submit your design for consideration.
 
 ## Required Files
 
-- 3D model in .STL format
-- Technical specifications document
-- Renders of your design (minimum 4 angles)
+- 3D model
+- PCB
 - Bill of materials
 
 ## Review Timeline
 
-Our team reviews submissions monthly. You can expect to hear back within 30 days.
+Our team reviews submissions yearly. You can't expect to hear back.
   `,
 }
 
@@ -69,11 +69,7 @@ export default function GuidePage() {
   return (
     <main className="min-h-screen bg-black pt-24 pb-16">
       <div className="container">
-        <Link href="/" className="inline-flex items-center text-cyan-400 mb-8 hover:text-cyan-300 transition-colors">
-          <ArrowLeft className="mr-2 h-4 w-4" />
-          Back to Home
-        </Link>
-
+      <Header />
         <div className="text-center mb-12">
           <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl mb-4">
             HackMouse <span className="text-cyan-400">Guide</span>
